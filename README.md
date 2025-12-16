@@ -8,13 +8,13 @@ To calibrate `video.mkv` taken by a pinhole camera:
 python track_pinhole.py
 ```
 
-To calibrate `video360.mp4` a 360° camera video, first reproject it to a cubemap (only keeping the front face):
+To calibrate a 360° camera video `video360.mp4` ([download here](https://cloud.ilabt.imec.be/index.php/s/i3tGBSNHE3WQfez)), first reproject it to a cubemap (only keeping the front face):
 
 ```bash
 python reproject.py
 ```
 
-This will result in `video360_repr.mp4`. The original `video360.mp4` is too large for Github, so we provide`video360_repr.mp4` directly. Then run:
+This will result in `video360_repr.mp4`. For simplicity, we provide`video360_repr.mp4` directly in this repository. Then run:
 
 ```bash
 python track_360.py
